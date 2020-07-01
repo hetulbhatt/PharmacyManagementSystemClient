@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFPharma" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFPharma" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ListMedicines">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="medi" nillable="true" type="tns:ArrayOfMedicine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListMedicines" nillable="true" type="tns:ListMedicines" />
+  <xs:complexType name="ArrayOfMedicine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Medicine" nillable="true" type="tns:Medicine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMedicine" nillable="true" type="tns:ArrayOfMedicine" />
+  <xs:complexType name="Medicine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dealer" nillable="true" type="tns:Dealer" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="tns:Manufacturer" />
+      <xs:element minOccurs="0" name="MedicineID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:double" />
+      <xs:element minOccurs="0" name="Stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Medicine" nillable="true" type="tns:Medicine" />
+  <xs:complexType name="Dealer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerID" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dealer" nillable="true" type="tns:Dealer" />
+  <xs:complexType name="Manufacturer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ManufacturerID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Manufacturer" nillable="true" type="tns:Manufacturer" />
+  <xs:complexType name="ListDealers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dels" nillable="true" type="tns:ArrayOfDealer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListDealers" nillable="true" type="tns:ListDealers" />
+  <xs:complexType name="ArrayOfDealer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Dealer" nillable="true" type="tns:Dealer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealer" nillable="true" type="tns:ArrayOfDealer" />
+  <xs:complexType name="ListManufacturers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="mans" nillable="true" type="tns:ArrayOfManufacturer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListManufacturers" nillable="true" type="tns:ListManufacturers" />
+  <xs:complexType name="ArrayOfManufacturer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Manufacturer" nillable="true" type="tns:Manufacturer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfManufacturer" nillable="true" type="tns:ArrayOfManufacturer" />
+  <xs:complexType name="ListLedger">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ledg" nillable="true" type="tns:ArrayOfLedger" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListLedger" nillable="true" type="tns:ListLedger" />
+  <xs:complexType name="ArrayOfLedger">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ledger" nillable="true" type="tns:Ledger" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLedger" nillable="true" type="tns:ArrayOfLedger" />
+  <xs:complexType name="Ledger">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:double" />
+      <xs:element minOccurs="0" name="Customer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entry" type="xs:int" />
+      <xs:element minOccurs="0" name="Medicine" nillable="true" type="tns:Medicine" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Ledger" nillable="true" type="tns:Ledger" />
+</xs:schema>

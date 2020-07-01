@@ -1,0 +1,10 @@
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\bin\Release\PharmaClient.exe.config
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\bin\Release\PharmaClient.exe
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\bin\Release\PharmaClient.pdb
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.Form1.resources
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.Login.resources
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.Properties.Resources.resources
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.csproj.GenerateResource.cache
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.exe
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.pdb
+C:\Users\hetul\source\repos\PharmaClient\PharmaClient\obj\Release\PharmaClient.csprojAssemblyReference.cache
